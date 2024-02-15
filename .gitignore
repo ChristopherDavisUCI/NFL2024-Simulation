@@ -1,0 +1,10 @@
+
+*.pyc
+.ipynb_checkpoints/last_teams-checkpoint.py
+.ipynb_checkpoints/LastWinless-checkpoint.ipynb
+.ipynb_checkpoints/nfl_sim_byes-checkpoint.ipynb
+.ipynb_checkpoints/sim_23season-checkpoint.py
+LastWinless.ipynb
+**/*.ipynb
+schedules/.DS_Store
+.DS_Store
