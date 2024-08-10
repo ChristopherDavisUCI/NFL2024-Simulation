@@ -77,7 +77,7 @@ def make_playoff_charts(total_dict):
             ).properties(
                 title=f"{conf} playoff seedings",
                 width=300,
-                height=300,
+                height=350,
             )
         
         chart_dict[conf] = c
@@ -144,7 +144,7 @@ def make_win_charts(win_dict):
             ).properties(
                 title=f"{conf} win totals",
                 width=300,
-                height=300,
+                height=350,
             )
 
         overlay = pd.DataFrame({'Proportion': [0.5]})
@@ -314,7 +314,7 @@ def make_streak_charts(streak_dict):
             ).properties(
                 title=f"{conf} longest win streaks",
                 width=300,
-                height=300,
+                height=350,
             )
 
         overlay = pd.DataFrame({'Proportion': [0.5]})
@@ -365,7 +365,7 @@ def make_stage_charts(stage_dict):
             ).properties(
                 title=f"{conf} Stage of Elimination",
                 width=300,
-                height=300,
+                height=350,
             )
 
         overlay = pd.DataFrame({'Proportion': [0.5]})
