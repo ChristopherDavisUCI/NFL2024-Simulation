@@ -14,6 +14,7 @@ from make_charts import (
                             make_last_charts,
                             make_streak_charts,
                             make_stage_charts,
+                            make_conference_chart,
                             make_superbowl_chart,
                             best_record_chart
                         )
@@ -278,6 +279,8 @@ if sim_button or ("rc" in st.session_state):
 
     stage_charts, champ_data = make_stage_charts(stage_dict)
 
+    conference_chart = make_conference_chart(stage_dict)
+
     superbowl_chart = make_superbowl_chart(stage_dict)
 
     best_chart = best_record_chart(best_record_list)
@@ -288,6 +291,7 @@ if sim_button or ("rc" in st.session_state):
     st.session_state['lc'] = last_charts
     st.session_state['streak_charts'] = streak_charts
     st.session_state['stage_charts'] = stage_charts
+    st.session_state['conference_chart'] = conference_chart
     st.session_state['superbowl_chart'] = superbowl_chart
     st.session_state['best_chart'] = best_chart
     st.session_state['raw_data'] = compare_market(raw_data, champ_data)
@@ -370,6 +374,7 @@ if 'pc' in st.session_state:
         st.header("Simulation results")
         st.write(st.session_state['pc'])
         st.write(st.session_state['wc'])
+    st.altair_chart(st.session_state["conference_chart"])
     st.altair_chart(st.session_state["superbowl_chart"])
     st.altair_chart(st.session_state["stage_charts"])
     # Week 18, no need for best regular season record

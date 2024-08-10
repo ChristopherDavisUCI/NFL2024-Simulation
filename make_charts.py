@@ -385,6 +385,47 @@ def make_stage_charts(stage_dict):
 
     return (stage_totals, raw_data)
 
+
+def make_conference_chart(stage_dict):
+
+    reps = sum(stage_dict["ARI"].values())
+
+    teams = stage_dict.keys()
+
+    sb_dict = {t: (stage_dict[t]["Lose in Super Bowl"]+stage_dict[t]["Win Super Bowl"])/reps for t in teams}
+
+    conf_charts = {}
+    for conf in ["AFC","NFC"]:
+        source = pd.DataFrame([(t,sb_dict[t]) for t in conf_teams[conf]], columns = ["Team","Proportion"])
+
+        source["Odds"] = source["Proportion"].map(prob_to_odds)
+
+        c1 = alt.Chart(source, width=alt.Step(40)).mark_bar().encode(
+            x = alt.X("Team", sort=alt.EncodingSortField("Proportion", order="descending")),
+            y = "Proportion",
+            color = alt.Color("Proportion", scale=alt.Scale(scheme="lighttealblue")),
+            tooltip = ["Team", "Proportion", "Odds"]
+        ).properties(
+                title=f"{conf} Champion"
+        )
+
+        c2 = c1.mark_text(dy=-10).encode(
+            color=alt.value("black"),
+            text="Odds"
+        )
+
+        conf_chart = c1+c2
+        conf_charts[conf] = conf_chart
+
+    conf_totals = alt.vconcat(*conf_charts.values()).resolve_scale(
+        color='independent'
+    ).properties(
+        title=f"Based on {reps} simulations:"
+    )
+
+    return conf_totals
+
+
 def make_superbowl_chart(stage_dict):
 
     reps = sum(stage_dict["ARI"].values())
