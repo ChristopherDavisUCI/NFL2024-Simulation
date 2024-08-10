@@ -380,7 +380,7 @@ if 'pc' in st.session_state:
     # Week 18, no need for best regular season record
     st.altair_chart(st.session_state["best_chart"])
     df_temp = pd.read_csv("data/markets.csv")
-    st.write(f'''The following were last updated on {df_temp.loc[0, 'date']}.  Needless to say, do not take the kelly staking sizes literally!!  (Along with errors and imprecisions in our app, also keep in mind how long the stake will be sitting unused.)''')
+    # st.write(f'''The following were last updated on {df_temp.loc[0, 'date']}.  Needless to say, do not take the kelly staking sizes literally!!  (Along with errors and imprecisions in our app, also keep in mind how long the stake will be sitting unused.)''')
     # Once we have betting odds to compare, uncomment the next line
     # st.dataframe(st.session_state['raw_data'])
     st.altair_chart(st.session_state['lc'])
