@@ -8,3 +8,7 @@ LastWinless.ipynb
 **/*.ipynb
 schedules/.DS_Store
 .DS_Store
+requirements-old.txt
+schedules/fake_schedule24-old.csv
+schedules/fake_schedule24.csv
+schedules/fake_schedule24.csv

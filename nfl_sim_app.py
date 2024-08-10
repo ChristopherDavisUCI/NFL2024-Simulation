@@ -19,7 +19,7 @@ from make_charts import (
                         )
 from compare_market import compare_market
 from itertools import permutations
-#from last_teams import get_last, get_streaks
+from last_teams import get_last, get_streaks
 from name_helper import get_abbr
 from odds_helper import prob_to_odds
 import time
@@ -30,7 +30,7 @@ st.title('2024 NFL Season Simulator')
 
 pr_default = pd.read_csv("data/pr.csv", index_col="Team").squeeze()
 div_series = pd.read_csv("data/divisions.csv", index_col=0).squeeze()
-df_schedule = pd.read_csv("schedules/fake_schedule24.csv")
+df_schedule = pd.read_csv("schedules/schedule24.csv")
 #last_played = df_schedule[df_schedule["home_score"].notna()].iloc[-1]
 last_played = "Nothing"
 teams = div_series.index
@@ -200,13 +200,13 @@ if sim_button or ("rc" in st.session_state):
     win_dict = {t:{i:0 for i in range(18)} for t in teams}
 
     # Longest win streak for each team
-    # streak_dict = {t:{i:0 for i in range(18)} for t in teams}
+    streak_dict = {t:{i:0 for i in range(18)} for t in teams}
 
-    #rank_dict = {div:{} for div in div_dict.keys()}
+    rank_dict = {div:{} for div in div_dict.keys()}
     rank_dict1 = {t:{} for t in teams}
 
     # List of terms like {'last_undefeated': ('KC',), 'last_winless': ('TB',)}
-    #last_list = []
+    last_list = []
 
     # Stage of elimination for each team
     stage_dict = {t:{k: 0 for k in stages} for t in teams}
@@ -214,9 +214,9 @@ if sim_button or ("rc" in st.session_state):
     # List of best regular season record teams
     best_record_list = []
 
-    #for div in rank_dict.keys():
-    #    for team_sort in permutations(div_dict[div]):
-    #        rank_dict[div][team_sort] = 0
+    for div in rank_dict.keys():
+       for team_sort in permutations(div_dict[div]):
+           rank_dict[div][team_sort] = 0
 
     for t in teams:
         for i in range(1,5):
@@ -231,8 +231,8 @@ if sim_button or ("rc" in st.session_state):
 
     for i in range(reps):
         df = simulate_reg_season(pr, df_forced)
-        #streaks = get_streaks(df)
-        #last_list.append(get_last(df))
+        streaks = get_streaks(df)
+        last_list.append(get_last(df))
         stand = Standings(df)
 
         p = stand.playoffs
@@ -245,20 +245,20 @@ if sim_button or ("rc" in st.session_state):
             team_outcome = stand.standings.loc[t]
             win_dict[t][team_outcome["Wins"]] += 1
             rank_dict1[t][team_outcome["Division_rank"]] += 1
-            #streak_dict[t][streaks[t]] += 1
+            streak_dict[t][streaks[t]] += 1
             stage_dict[t][stage_of_elim[t]] += 1
 
         best_record_list.append(stand.best_reg_record)
         
-        #for d in rank_dict.keys():
-        #    rank_dict[d][tuple(stand.div_ranks[d])] += 1
+        for d in rank_dict.keys():
+           rank_dict[d][tuple(stand.div_ranks[d])] += 1
         
         bar.progress((i+1)/reps)
 
-    #for d in rank_dict.keys():
-    #    rank_dict[d] = {i:j/reps for i,j in rank_dict[d].items()}
+    for d in rank_dict.keys():
+       rank_dict[d] = {i:j/reps for i,j in rank_dict[d].items()}
 
-    #st.session_state["rd"] = rank_dict
+    st.session_state["rd"] = rank_dict
 
     end = time.time()
     
@@ -272,9 +272,9 @@ if sim_button or ("rc" in st.session_state):
 
     div_charts = make_div_charts(rank_dict1)
 
-    #last_charts = make_last_charts(last_list)
+    last_charts = make_last_charts(last_list)
 
-    #streak_charts = make_streak_charts(streak_dict)
+    streak_charts = make_streak_charts(streak_dict)
 
     stage_charts, champ_data = make_stage_charts(stage_dict)
 
@@ -285,8 +285,8 @@ if sim_button or ("rc" in st.session_state):
     st.session_state['pc'] = playoff_charts
     st.session_state['wc'] = win_charts
     st.session_state['dc'] = div_charts
-    #st.session_state['lc'] = last_charts
-    #st.session_state['streak_charts'] = streak_charts
+    st.session_state['lc'] = last_charts
+    st.session_state['streak_charts'] = streak_charts
     st.session_state['stage_charts'] = stage_charts
     st.session_state['superbowl_chart'] = superbowl_chart
     st.session_state['best_chart'] = best_chart
@@ -372,13 +372,14 @@ if 'pc' in st.session_state:
         st.write(st.session_state['wc'])
     st.altair_chart(st.session_state["superbowl_chart"])
     st.altair_chart(st.session_state["stage_charts"])
-    #Week 18, no need for best regular season record
-    #st.altair_chart(st.session_state["best_chart"])
-    # df_temp = pd.read_csv("data/markets.csv")
-    # st.write(f'''The following were last updated on {df_temp.loc[0, 'date']}.  Needless to say, do not take the kelly staking sizes literally!!  (Along with errors and imprecisions in our app, also keep in mind how long the stake will be sitting unused.)''')
+    # Week 18, no need for best regular season record
+    st.altair_chart(st.session_state["best_chart"])
+    df_temp = pd.read_csv("data/markets.csv")
+    st.write(f'''The following were last updated on {df_temp.loc[0, 'date']}.  Needless to say, do not take the kelly staking sizes literally!!  (Along with errors and imprecisions in our app, also keep in mind how long the stake will be sitting unused.)''')
+    # Once we have betting odds to compare, uncomment the next line
     # st.dataframe(st.session_state['raw_data'])
-    # st.altair_chart(st.session_state['lc'])
-    # st.altair_chart(st.session_state["streak_charts"])
+    st.altair_chart(st.session_state['lc'])
+    st.altair_chart(st.session_state["streak_charts"])
 else:
     make_sample()
 
@@ -396,7 +397,11 @@ radio_dict = {
 
 info_choice = st.radio(
     'Options for more information',
-    radio_dict.keys(),key="opt_radio",format_func=lambda k: radio_dict[k])
+    radio_dict.keys(),
+    key="opt_radio",
+    format_func=lambda k: radio_dict[k],
+    index=1
+    )
 
 if info_choice == "Matchups":
     try:
