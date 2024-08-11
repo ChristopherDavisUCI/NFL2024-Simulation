@@ -271,21 +271,43 @@ if sim_button or ("rc" in st.session_state):
 
     playoff_charts, raw_data = make_playoff_charts(playoff_dict)
 
+    pivot_seed = raw_data.pivot(index="Team", columns="Seed")['Proportion']
+    pivot_seed.columns = [f"Seed {c}" for c in pivot_seed.columns]
+
     win_charts = make_win_charts(win_dict)
 
     div_charts = make_div_charts(rank_dict1)
 
-    last_charts = make_last_charts(last_list)
+    last_charts, last_dct = make_last_charts(last_list)
+    last_dct_dfs = {}
+    for k, df_temp in last_dct.items():
+        df_temp = df_temp.set_index("Team", drop=True)[["Proportion"]]
+        df_temp.rename({"Proportion": f"Last {k}"}, axis=1, inplace=True)
+        last_dct_dfs[k] = df_temp
 
     streak_charts = make_streak_charts(streak_dict)
 
     stage_charts, champ_data = make_stage_charts(stage_dict)
 
+    pivot_stage = champ_data.pivot(index="Team", columns="Stage")['Proportion']
+    pivot_stage.columns = [f"Stage of Elim: {c}" for c in pivot_stage.columns]
+
     conference_chart = make_conference_chart(stage_dict)
 
     superbowl_chart = make_superbowl_chart(stage_dict)
 
-    best_chart = best_record_chart(best_record_list)
+    best_chart, df_best = best_record_chart(best_record_list)
+
+    df_best = df_best.set_index("Team", drop=True)[["Proportion"]]
+    df_best.rename({"Proportion": "Best Record"}, axis=1, inplace=True)
+
+    pivot_all = pd.concat(
+        (
+            pivot_seed,
+            pivot_stage,
+            df_best,
+            *last_dct_dfs.values()
+        ), axis=1)
 
     st.session_state['pc'] = playoff_charts
     st.session_state['wc'] = win_charts
@@ -298,6 +320,7 @@ if sim_button or ("rc" in st.session_state):
     st.session_state['best_chart'] = best_chart
     st.session_state['raw_data'] = compare_market(raw_data, champ_data)
     st.session_state['full_standings'] = playoff_full
+    st.session_state['pivot'] = pivot_all
 
 
 # Input is a tuple like ("SF", "PHI", ...)
@@ -369,6 +392,7 @@ The thin black line represents the median win total for each team.\n\nFor exampl
 * The teams are sorted in terms of how likely they are to win their division.  If all you care about is how likely is the team to win its division, then it's probably more convenient to use the playoff seedings image.''')
 
 if 'pc' in st.session_state:
+    
     try:
         placeholder0.write(st.session_state['pc'])
         placeholder1.write(st.session_state['wc'])
@@ -379,7 +403,6 @@ if 'pc' in st.session_state:
     st.altair_chart(st.session_state["conference_chart"])
     st.altair_chart(st.session_state["superbowl_chart"])
     st.altair_chart(st.session_state["stage_charts"])
-    # Week 18, no need for best regular season record
     st.altair_chart(st.session_state["best_chart"])
     df_temp = pd.read_csv("data/markets.csv")
     # st.write(f'''The following were last updated on {df_temp.loc[0, 'date']}.  Needless to say, do not take the kelly staking sizes literally!!  (Along with errors and imprecisions in our app, also keep in mind how long the stake will be sitting unused.)''')
@@ -387,11 +410,21 @@ if 'pc' in st.session_state:
     # st.dataframe(st.session_state['raw_data'])
     st.altair_chart(st.session_state['lc'])
     st.altair_chart(st.session_state["streak_charts"])
+
+    st.subheader("Download as a csv")
+    st.download_button(
+            "Download the results", 
+            data = st.session_state["pivot"].to_csv().encode('utf-8'),
+            file_name = f"sim_results_{reps:.0f}_reps.csv",
+            mime="text/csv"
+        )
+    
 else:
     make_sample()
 
 df_rankings = pd.DataFrame({col:make_ranking(df_pr,col) for col in df_pr.columns})
     
+st.subheader("Further options")
 radio_dict = {
     "Matchups": "Probabilities of playoff standings 1-7.",
     "Division": "Probabilities for different division ranks.",

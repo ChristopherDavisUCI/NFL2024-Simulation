@@ -260,7 +260,7 @@ def make_last_charts(last_list):
         bandPaddingInner=0.5
     )
 
-    return output_chart
+    return output_chart, {"undefeated": df_undefeated, "winless": df_winless}
 
 
 def make_streak_charts(streak_dict):
@@ -489,4 +489,4 @@ def best_record_chart(best_list):
         bandPaddingInner=0.5
     )
 
-    return output_chart
+    return output_chart, df_best
