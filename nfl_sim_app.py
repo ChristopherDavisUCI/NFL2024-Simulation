@@ -98,6 +98,8 @@ with st.sidebar:
                 pr_upload = df_upload.iloc[:, 0]
             pr_upload2 = pd.Series()
             for k in pr_upload.index:
+                if not isinstance(k, str):
+                    continue
                 if k.upper().strip() == "HFA":
                     pr_upload2["HFA"] = pr_upload[k]
                 abbr = get_abbr(k)
