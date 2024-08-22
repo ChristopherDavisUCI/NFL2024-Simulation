@@ -150,7 +150,9 @@ df_pr = pd.DataFrame({"Overall": {t:pr_complete[t+"_Off"] + pr_complete[t+"_Def"
         )
 
 
-st.markdown('''Based on your power ratings, we use Python to run many simulations of the 2023 NFL season, and then estimate answers to questions like:
+st.markdown('''**Warning**.  As of 8/22/2024, the default power ratings are still from 2023, so definitely upload your own.
+            
+Based on your power ratings, we use Python to run many simulations of the 2023 NFL season, and then estimate answers to questions like:
 * How likely is Dallas to get the no. 1 seed?  To win its division? To make the playoffs?
 * How likely are the Steelers to win exactly 11 games?  To win 11 or more games?
 * How likely are the Patriots to finish 3rd in the AFC East?''')
