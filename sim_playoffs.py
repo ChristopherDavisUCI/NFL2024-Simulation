@@ -106,4 +106,6 @@ def simulate_playoffs(pr, seeds):
     stage_of_elim[champion] = "Win Super Bowl"
     sb_loser = next(team for team in conf_champs if team != champion)
     stage_of_elim[sb_loser] = "Lose in Super Bowl"
-    return stage_of_elim
+    # We want to know the exact super bowl matchup, listing NFC first
+    matchup = f"{champion} vs {sb_loser}" if champion in conf_teams["NFC"] else f"{sb_loser} vs {champion}"
+    return stage_of_elim, matchup

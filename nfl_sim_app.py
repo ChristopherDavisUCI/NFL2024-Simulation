@@ -217,6 +217,9 @@ if sim_button or ("rc" in st.session_state):
     # List of best regular season record teams
     best_record_list = []
 
+    # List of super bowl exact matchups, listing NFC first
+    matchup_list = []
+
     for div in rank_dict.keys():
        for team_sort in permutations(div_dict[div]):
            rank_dict[div][team_sort] = 0
@@ -239,7 +242,7 @@ if sim_button or ("rc" in st.session_state):
         stand = Standings(df)
 
         p = stand.playoffs
-        stage_of_elim = simulate_playoffs(pr, p)
+        stage_of_elim, exact_matchup = simulate_playoffs(pr, p)
         for conf in ["AFC", "NFC"]:
             playoff_full[conf].append(tuple(p[conf]))
             for j,t in enumerate(p[conf]):
@@ -252,6 +255,7 @@ if sim_button or ("rc" in st.session_state):
             stage_dict[t][stage_of_elim[t]] += 1
 
         best_record_list.append(stand.best_reg_record)
+        matchup_list.append(exact_matchup)
         
         for d in rank_dict.keys():
            rank_dict[d][tuple(stand.div_ranks[d])] += 1
@@ -318,7 +322,7 @@ if sim_button or ("rc" in st.session_state):
     st.session_state['conference_chart'] = conference_chart
     st.session_state['superbowl_chart'] = superbowl_chart
     st.session_state['best_chart'] = best_chart
-    st.session_state['raw_data'] = compare_market(raw_data, champ_data)
+    st.session_state['raw_data'] = compare_market(raw_data, champ_data, pivot_all, matchup_list)
     st.session_state['full_standings'] = playoff_full
     st.session_state['pivot'] = pivot_all
 
