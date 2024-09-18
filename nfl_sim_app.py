@@ -31,9 +31,10 @@ st.title('2024 NFL Season Simulator')
 
 pr_default = pd.read_csv("data/pr.csv", index_col="Team").squeeze()
 div_series = pd.read_csv("data/divisions.csv", index_col=0).squeeze()
-df_schedule = pd.read_csv("schedules/schedule24.csv")
-#last_played = df_schedule[df_schedule["home_score"].notna()].iloc[-1]
-last_played = "Nothing"
+df_schedule = pd.read_csv("schedules/schedule24.csv") # from https://github.com/nflverse/nfldata/blob/master/data/games.csv
+# remove games from other seasons
+last_played = df_schedule[df_schedule["home_score"].notna()].iloc[-1]
+#last_played = "Nothing"
 teams = div_series.index
 conf_teams = {}
 for conf in ["AFC","NFC"]:
@@ -269,8 +270,8 @@ if sim_button or ("rc" in st.session_state):
 
     end = time.time()
     
-    time_holder.markdown(f'''{reps} simulations of the 2024 NFL season took {end - start:.1f} seconds.''')  
-    # Last updated game: Week {last_played['week']}: {last_played['away_team']} {int(last_played['away_score'])} - {last_played['home_team']} {int(last_played['home_score'])}''')
+    time_holder.markdown(f'''{reps} simulations of the 2024 NFL season took {end - start:.1f} seconds. 
+    Last updated game: Week {last_played['week']}: {last_played['away_team']} {int(last_played['away_score'])} - {last_played['home_team']} {int(last_played['home_score'])}''')
 
 
     playoff_charts, raw_data = make_playoff_charts(playoff_dict)
