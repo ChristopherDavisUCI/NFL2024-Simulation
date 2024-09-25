@@ -28,11 +28,17 @@ import time
 st.set_page_config(layout="wide", page_title="2024 Simulator")
 
 st.title('2024 NFL Season Simulator')
+# New season: update schedule below and in the `sim_23season.py` file
+# New season: update every schedule24.csv to schedule25.csv
 
 pr_default = pd.read_csv("data/pr.csv", index_col="Team").squeeze()
 div_series = pd.read_csv("data/divisions.csv", index_col=0).squeeze()
-df_schedule = pd.read_csv("schedules/schedule24.csv") # from https://github.com/nflverse/nfldata/blob/master/data/games.csv
-# remove games from other seasons
+df_schedule = pd.read_csv("schedules/schedule24.csv") # from https://github.com/nflverse/nfldata/blob/master/data/games.csv remove games from other seasons
+# next we add a column indicating if it's a conference game
+df_schedule["conf_game"] = df_schedule.apply(
+    lambda row: div_series[row["home_team"]][:3] == div_series[row["away_team"]][:3], axis=1
+    )
+df_schedule.to_csv("schedules/schedule24.csv", index=False)
 last_played = df_schedule[df_schedule["home_score"].notna()].iloc[-1]
 #last_played = "Nothing"
 teams = div_series.index
