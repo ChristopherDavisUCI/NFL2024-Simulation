@@ -33,9 +33,10 @@ st.title('2024 NFL Season Simulator')
 
 pr_default = pd.read_csv("data/pr.csv", index_col="Team").squeeze()
 div_series = pd.read_csv("data/divisions.csv", index_col=0).squeeze()
-df_schedule = pd.read_csv("schedules/schedule24.csv") # from https://github.com/nflverse/nfldata/blob/master/data/games.csv remove games from other seasons
-# next we add a column indicating if it's a conference game
-# getting an error with the following lines
+# To update, comment the next line and uncomment the following lines, run locally
+df_schedule = pd.read_csv("schedules/schedule24.csv")
+# df_schedule = pd.read_csv("https://raw.githubusercontent.com/nflverse/nfldata/refs/heads/master/data/games.csv")
+# df_schedule = df_schedule.query("season==2024")
 # df_schedule["conf_game"] = df_schedule.apply(
 #     lambda row: div_series[row["home_team"]][:3] == div_series[row["away_team"]][:3], axis=1
 #     )
