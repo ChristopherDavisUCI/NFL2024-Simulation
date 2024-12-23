@@ -73,11 +73,16 @@ def simulate_round(pr, round_seeds, stage_of_elim):
     
 
 def simulate_conference(pr, conf_seeds, stage_of_elim):
+    bye_team = conf_seeds[1]
     round_seeds = conf_seeds
     while len(round_seeds) > 1:
+        if len(round_seeds) == 2:
+            # conf_champ_matchup has the form (bye_team, [conf champ 1, conf champ 2])
+            # the conference championship teams are alphabetized
+            conf_champ_matchup = (bye_team, tuple(sorted(list(round_seeds.values()))))
         round_seeds, stage_of_elim = simulate_round(pr, round_seeds, stage_of_elim)
 
-    return list(round_seeds.values())[0], stage_of_elim
+    return list(round_seeds.values())[0], stage_of_elim, conf_champ_matchup
 
 
 def simulate_playoffs(pr, seeds):
@@ -88,11 +93,13 @@ def simulate_playoffs(pr, seeds):
             seeds[conf] = dict(zip(range(1, 8), teams))
     
     conf_champs = []
+    conf_champ_matchups = []
     stage_of_elim = {}
     for conf, conf_seeds in seeds.items():
         stage_of_elim.update({team: "Miss playoffs" for team in conf_teams[conf] if team not in conf_seeds.values()})
-        conf_champ, stage_of_elim = simulate_conference(pr, conf_seeds, stage_of_elim)
+        conf_champ, stage_of_elim, conf_champ_matchup = simulate_conference(pr, conf_seeds, stage_of_elim)
         conf_champs.append(conf_champ)
+        conf_champ_matchups.append(conf_champ_matchup)
 
     # We assume no home-field advantage in the Super Bowl
     match_dct = {
@@ -108,4 +115,4 @@ def simulate_playoffs(pr, seeds):
     stage_of_elim[sb_loser] = "Lose in Super Bowl"
     # We want to know the exact super bowl matchup, listing NFC first
     matchup = f"{champion} vs {sb_loser}" if champion in conf_teams["NFC"] else f"{sb_loser} vs {champion}"
-    return stage_of_elim, matchup
+    return stage_of_elim, matchup, conf_champ_matchups

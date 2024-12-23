@@ -9,6 +9,7 @@ from sim_playoffs import stages, simulate_playoffs
 from make_standings import Standings
 from make_charts import (
                             make_playoff_charts,
+                            make_conf_champ_charts,
                             make_win_charts, 
                             make_div_charts,
                             make_last_charts,
@@ -19,6 +20,7 @@ from make_charts import (
                             best_record_chart
                         )
 from compare_market import compare_market
+from conference_matchups import get_conf_matchup_probs
 from itertools import permutations
 from last_teams import get_last, get_streaks
 from name_helper import get_abbr
@@ -233,6 +235,10 @@ if sim_button or ("rc" in st.session_state):
     # List of super bowl exact matchups, listing NFC first
     matchup_list = []
 
+    # List of conference championship matchups
+    afc_matchup_list = []
+    nfc_matchup_list = []
+
     for div in rank_dict.keys():
        for team_sort in permutations(div_dict[div]):
            rank_dict[div][team_sort] = 0
@@ -255,7 +261,7 @@ if sim_button or ("rc" in st.session_state):
         stand = Standings(df)
 
         p = stand.playoffs
-        stage_of_elim, exact_matchup = simulate_playoffs(pr, p)
+        stage_of_elim, exact_matchup, conf_champ_matchups = simulate_playoffs(pr, p)
         for conf in ["AFC", "NFC"]:
             playoff_full[conf].append(tuple(p[conf]))
             for j,t in enumerate(p[conf]):
@@ -270,10 +276,23 @@ if sim_button or ("rc" in st.session_state):
         best_record_list.append(stand.best_reg_record)
         matchup_list.append(exact_matchup)
         
+        # TODO: Make this more robust, assumes AFC is always first
+        afc_matchup_list.append(conf_champ_matchups[0])
+        nfc_matchup_list.append(conf_champ_matchups[1])
+        
         for d in rank_dict.keys():
            rank_dict[d][tuple(stand.div_ranks[d])] += 1
         
         bar.progress((i+1)/reps)
+
+    # The following is a dictionary describing, for each conference and each possible bye team, how likely various 
+    # conference championships are.
+    matchup_dct = get_conf_matchup_probs(
+        {
+            "AFC": afc_matchup_list,
+            "NFC": nfc_matchup_list
+        }
+    )
 
     for d in rank_dict.keys():
        rank_dict[d] = {i:j/reps for i,j in rank_dict[d].items()}
@@ -287,6 +306,8 @@ if sim_button or ("rc" in st.session_state):
 
 
     playoff_charts, raw_data = make_playoff_charts(playoff_dict)
+
+    conf_champ_charts = make_conf_champ_charts(matchup_dct)
 
     pivot_seed = raw_data.pivot(index="Team", columns="Seed")['Proportion']
     pivot_seed.columns = [f"Seed {c}" for c in pivot_seed.columns]
@@ -327,6 +348,7 @@ if sim_button or ("rc" in st.session_state):
         ), axis=1)
 
     st.session_state['pc'] = playoff_charts
+    st.session_state['ccc'] = conf_champ_charts
     st.session_state['wc'] = win_charts
     st.session_state['dc'] = div_charts
     st.session_state['lc'] = last_charts
@@ -444,6 +466,7 @@ df_rankings = pd.DataFrame({col:make_ranking(df_pr,col) for col in df_pr.columns
     
 st.subheader("Further options")
 radio_dict = {
+    "Conference": "Probabilities of various Conference Championship matchups.",
     "Matchups": "Probabilities of playoff standings 1-7.",
     "Division": "Probabilities for different division ranks.",
     "Rankings": "See the power rankings 1-32 based on the current values.",
@@ -476,6 +499,14 @@ if info_choice == "Matchups":
 '''
             st.markdown(output_str)
     except KeyError:
+        st.write('No data yet. Press the "Run simulations" button above.')
+elif info_choice == "Conference":
+    try:
+        conf_champ_charts = st.session_state["ccc"]
+        st.altair_chart(
+            alt.vconcat(conf_champ_charts["AFC"], conf_champ_charts["NFC"])
+            )
+    except AttributeError:
         st.write('No data yet. Press the "Run simulations" button above.')
 elif info_choice == "Rankings":
     st.subheader("Power rankings 1-32 based on current values")

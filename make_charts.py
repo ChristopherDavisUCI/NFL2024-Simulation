@@ -93,6 +93,36 @@ def make_playoff_charts(total_dict):
     return (playoff_charts, raw_data)
 
 
+def make_conf_champ_charts(matchup_dct):
+    chart_dct = {}
+
+    for conf in ["AFC", "NFC"]:
+        prob_dct = matchup_dct[conf]
+        df = pd.DataFrame(prob_dct).reset_index().rename({"level_0": "team1", "level_1": "team2"}, axis=1)
+        df = df.melt(id_vars=["team1", "team2"], var_name="bye team", value_name="prob")
+        df = df[df["prob"] > 0].copy()
+        base = alt.Chart(df).encode(
+            alt.X("team1").title(None),
+            alt.Y("team2").title(None),
+        )
+        text = base.mark_text().encode(text="prob")
+        rect = base.mark_rect().encode(
+            alt.Color("prob", scale=alt.Scale(domain=[0,1]))
+        )
+        chart = (rect+text).facet(
+            row="bye team"
+        ).resolve_axis(
+            x="independent",
+            y="independent"
+        ).properties(
+            title=conf
+        )
+        
+        chart_dct[conf] = chart
+    
+    return chart_dct
+
+
 def make_win_charts(win_dict):
     odds_dict2 = {
                     "Proportion":"Odds",
