@@ -98,6 +98,13 @@ def make_conf_champ_charts(matchup_dct):
 
     for conf in ["AFC", "NFC"]:
         prob_dct = matchup_dct[conf]
+        # To get a symmetric DataFrame at the end
+        for bye_team, dct in prob_dct.items():
+            temp_dct = {}
+            # Reversing the tuples
+            for k,v in dct.items():
+                temp_dct[k[::-1]] = v
+            dct.update(temp_dct)
         df = pd.DataFrame(prob_dct).reset_index().rename({"level_0": "team1", "level_1": "team2"}, axis=1)
         df = df.melt(id_vars=["team1", "team2"], var_name="bye team", value_name="prob")
         df = df[df["prob"] > 0].copy()
