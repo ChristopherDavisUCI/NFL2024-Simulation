@@ -33,14 +33,18 @@ st.title('2024 NFL Season Simulator')
 
 pr_default = pd.read_csv("data/pr.csv", index_col="Team").squeeze()
 div_series = pd.read_csv("data/divisions.csv", index_col=0).squeeze()
-# To update, comment the next line and uncomment the following lines, run locally
-df_schedule = pd.read_csv("schedules/schedule24.csv")
-# df_schedule = pd.read_csv("https://raw.githubusercontent.com/nflverse/nfldata/refs/heads/master/data/games.csv")
-# df_schedule = df_schedule.query("season==2024")
-# df_schedule["conf_game"] = df_schedule.apply(
-#     lambda row: div_series[row["home_team"]][:3] == div_series[row["away_team"]][:3], axis=1
-#     )
-# df_schedule.to_csv("schedules/schedule24.csv", index=False)
+
+download_results = False
+if download_results:
+    df_schedule = pd.read_csv("https://raw.githubusercontent.com/nflverse/nfldata/refs/heads/master/data/games.csv")
+    df_schedule = df_schedule.query("season==2024")
+    df_schedule["conf_game"] = df_schedule.apply(
+        lambda row: div_series[row["home_team"]][:3] == div_series[row["away_team"]][:3], axis=1
+        )
+    df_schedule.to_csv("schedules/schedule24.csv", index=False)
+else:
+    df_schedule = pd.read_csv("schedules/schedule24.csv")
+
 last_played = df_schedule[df_schedule["home_score"].notna()].iloc[-1]
 #last_played = "Nothing"
 teams = div_series.index
