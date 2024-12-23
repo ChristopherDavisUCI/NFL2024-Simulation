@@ -105,7 +105,7 @@ def make_conf_champ_charts(matchup_dct):
             alt.X("team1").title(None),
             alt.Y("team2").title(None),
         ).properties(
-            width=150
+            width=200
         )
         text = base.mark_text().encode(text="prob")
         rect = base.mark_rect().encode(
