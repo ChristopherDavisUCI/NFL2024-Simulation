@@ -427,7 +427,7 @@ if 'pc' in st.session_state:
     # Once we have betting odds to compare, uncomment the next line
     st.dataframe(st.session_state['raw_data'])
     # st.altair_chart(st.session_state['lc'])
-    st.altair_chart(st.session_state["streak_charts"])
+    # st.altair_chart(st.session_state["streak_charts"])
 
     st.subheader("Download as a csv")
     st.download_button(
@@ -458,7 +458,7 @@ info_choice = st.radio(
     radio_dict.keys(),
     key="opt_radio",
     format_func=lambda k: radio_dict[k],
-    index=1
+    index=0
     )
 
 if info_choice == "Matchups":
