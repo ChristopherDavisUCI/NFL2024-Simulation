@@ -33,6 +33,8 @@ st.title('2024 NFL Season Simulator')
 # New season: update schedule below and in the `sim_23season.py` file
 # New season: update every schedule24.csv to schedule25.csv
 
+st.header("Jan 6 2025.  Do not use, something seems to be broken!  Will try to fix.")
+
 pr_default = pd.read_csv("data/pr.csv", index_col="Team").squeeze()
 div_series = pd.read_csv("data/divisions.csv", index_col=0).squeeze()
 
