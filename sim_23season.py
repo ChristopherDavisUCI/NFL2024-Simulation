@@ -33,7 +33,8 @@ def simulate_reg_season(pr = pr_default, df_stored=df_stored):
     played_boolean = df_stored["home_score"].notna()
     adjust_ties(df)
     df.loc[played_boolean, scores] = df_stored.loc[played_boolean, scores]
-    return df
+    # We don't want to use playoff results in computing the standings
+    return df[df["game_type"] == "REG"]
 
 def make_pr_custom(pr):
     global pr_custom
