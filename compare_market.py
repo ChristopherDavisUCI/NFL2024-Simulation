@@ -23,10 +23,10 @@ def get_prob(row, prob_dct):
     if row["raw_market"] == "division":
         ser = prob_dct["div"]
         return ser[row["team"]]
-    elif (row["raw_market"] == "make playoffs") & (row["result"] == "Yes"):
+    elif (row["raw_market"] == "make playoffs") and (row["result"] == "Yes"):
         ser = prob_dct["mp"]
         return ser[row["team"]]
-    elif (row["raw_market"] == "make playoffs") & (row["result"] == "No"):
+    elif (row["raw_market"] == "make playoffs") and (row["result"] == "No"):
         ser = prob_dct["mp"]
         return 1-ser[row["team"]]
     elif row["raw_market"] == "conference":
@@ -52,9 +52,9 @@ def get_prob(row, prob_dct):
 def name_market(row):
     if row["raw_market"] == "division":
         return "Win division"
-    elif (row["raw_market"] == "make playoffs") & (row["result"] == "Yes"):
+    elif (row["raw_market"] == "make playoffs") and (row["result"] == "Yes"):
         return "Make playoffs - Yes"
-    elif (row["raw_market"] == "make playoffs") & (row["result"] == "No"):
+    elif (row["raw_market"] == "make playoffs") and (row["result"] == "No"):
         return "Make playoffs - No"
     elif row["raw_market"] == "conference":
         return "Conference Champion"
