@@ -506,7 +506,7 @@ elif info_choice == "Conference":
         st.altair_chart(
             alt.vconcat(conf_champ_charts["AFC"], conf_champ_charts["NFC"])
             )
-    except AttributeError:
+    except (AttributeError, KeyError):
         st.write('No data yet. Press the "Run simulations" button above.')
 elif info_choice == "Rankings":
     st.subheader("Power rankings 1-32 based on current values")
