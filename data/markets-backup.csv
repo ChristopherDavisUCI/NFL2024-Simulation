@@ -1,499 +1,101 @@
 team,odds,date,site,division,market,result,conference
-SF,-125,Oct08,BetOnline,NFC West,division,,
-SEA,230,Oct08,BetOnline,NFC West,division,,
-ARI,450,Oct08,BetOnline,NFC West,division,,
-LA,1400,Oct08,BetOnline,NFC West,division,,
-HOU,-500,Oct08,BetOnline,AFC South,division,,
-IND,800,Oct08,BetOnline,AFC South,division,,
-TEN,1100,Oct08,BetOnline,AFC South,division,,
-JAX,1200,Oct08,BetOnline,AFC South,division,,
-BUF,-225,Oct08,BetOnline,AFC East,division,,
-NYJ,325,Oct08,BetOnline,AFC East,division,,
-MIA,550,Oct08,BetOnline,AFC East,division,,
-NE,4000,Oct08,BetOnline,AFC East,division,,
-BAL,-270,Oct08,BetOnline,AFC North,division,,
-PIT,350,Oct08,BetOnline,AFC North,division,,
-CIN,650,Oct08,BetOnline,AFC North,division,,
-CLE,5000,Oct08,BetOnline,AFC North,division,,
-PHI,130,Oct08,BetOnline,NFC East,division,,
-WAS,180,Oct08,BetOnline,NFC East,division,,
-DAL,265,Oct08,BetOnline,NFC East,division,,
-NYG,2500,Oct08,BetOnline,NFC East,division,,
-MIN,-110,Oct08,BetOnline,NFC North,division,,
-DET,160,Oct08,BetOnline,NFC North,division,,
-GB,675,Oct08,BetOnline,NFC North,division,,
-CHI,1400,Oct08,BetOnline,NFC North,division,,
-KC,-1800,Oct08,BetOnline,AFC West,division,,
-LAC,1200,Oct08,BetOnline,AFC West,division,,
-DEN,1600,Oct08,BetOnline,AFC West,division,,
-LV,4000,Oct08,BetOnline,AFC West,division,,
-SF,-170,Oct08,BetOnline,,make playoffs,Yes,
-SF,140,Oct08,BetOnline,,make playoffs,No,
-SEA,-190,Oct08,BetOnline,,make playoffs,No,
-SEA,155,Oct08,BetOnline,,make playoffs,Yes,
-CHI,-260,Oct08,BetOnline,,make playoffs,No,
-CHI,200,Oct08,BetOnline,,make playoffs,Yes,
-JAX,-500,Oct08,BetOnline,,make playoffs,No,
-JAX,350,Oct08,BetOnline,,make playoffs,Yes,
-MIN,-900,Oct08,BetOnline,,make playoffs,Yes,
-MIN,550,Oct08,BetOnline,,make playoffs,No,
-ARI,-270,Oct08,BetOnline,,make playoffs,No,
-ARI,210,Oct08,BetOnline,,make playoffs,Yes,
-ATL,-200,Oct08,BetOnline,,make playoffs,Yes,
-ATL,160,Oct08,BetOnline,,make playoffs,No,
-BAL,-900,Oct08,BetOnline,,make playoffs,Yes,
-BAL,550,Oct08,BetOnline,,make playoffs,No,
-BUF,-700,Oct08,BetOnline,,make playoffs,Yes,
-BUF,450,Oct08,BetOnline,,make playoffs,No,
-CAR,-4000,Oct08,BetOnline,,make playoffs,No,
-CAR,1600,Oct08,BetOnline,,make playoffs,Yes,
-CIN,-165,Oct08,BetOnline,,make playoffs,No,
-CIN,135,Oct08,BetOnline,,make playoffs,Yes,
-CLE,-2000,Oct08,BetOnline,,make playoffs,No,
-CLE,1000,Oct08,BetOnline,,make playoffs,Yes,
-DAL,-120,Oct08,BetOnline,,make playoffs,No,
-DAL,-110,Oct08,BetOnline,,make playoffs,Yes,
-DEN,-210,Oct08,BetOnline,,make playoffs,No,
-DEN,170,Oct08,BetOnline,,make playoffs,Yes,
-DET,-300,Oct08,BetOnline,,make playoffs,Yes,
-DET,240,Oct08,BetOnline,,make playoffs,No,
-GB,-120,Oct08,BetOnline,,make playoffs,Yes,
-GB,-110,Oct08,BetOnline,,make playoffs,No,
-HOU,-900,Oct08,BetOnline,,make playoffs,Yes,
-HOU,550,Oct08,BetOnline,,make playoffs,No,
-IND,-230,Oct08,BetOnline,,make playoffs,No,
-IND,190,Oct08,BetOnline,,make playoffs,Yes,
-KC,-20000,Oct08,BetOnline,,make playoffs,Yes,
-KC,2500,Oct08,BetOnline,,make playoffs,No,
-LV,-900,Oct08,BetOnline,,make playoffs,No,
-LV,550,Oct08,BetOnline,,make playoffs,Yes,
-LAC,-150,Oct08,BetOnline,,make playoffs,No,
-LAC,120,Oct08,BetOnline,,make playoffs,Yes,
-LA,-1400,Oct08,BetOnline,,make playoffs,No,
-LA,700,Oct08,BetOnline,,make playoffs,Yes,
-NE,-3000,Oct08,BetOnline,,make playoffs,No,
-NE,1400,Oct08,BetOnline,,make playoffs,Yes,
-NYG,-1400,Oct08,BetOnline,,make playoffs,No,
-NYG,700,Oct08,BetOnline,,make playoffs,Yes,
-NYJ,-135,Oct08,BetOnline,,make playoffs,No,
-NYJ,105,Oct08,BetOnline,,make playoffs,Yes,
-PHI,-200,Oct08,BetOnline,,make playoffs,Yes,
-PHI,160,Oct08,BetOnline,,make playoffs,No,
-PIT,-125,Oct08,BetOnline,,make playoffs,Yes,
-PIT,-105,Oct08,BetOnline,,make playoffs,No,
-TB,-150,Oct08,BetOnline,,make playoffs,No,
-TB,120,Oct08,BetOnline,,make playoffs,Ye,
-TEN,-800,Oct08,BetOnline,,make playoffs,No,
-TEN,500,Oct08,BetOnline,,make playoffs,Yes,
-WAS,-160,Oct08,BetOnline,,make playoffs,Yes,
-WAS,130,Oct08,BetOnline,,make playoffs,No,
-MIA,-250,Oct08,BetOnline,,make playoffs,No,
-MIA,195,Oct08,BetOnline,,make playoffs,Yes,
-SF,400,Oct08,BetOnline,NFC West,conference,,NFC
-DET,475,Oct08,BetOnline,NFC North,conference,,NFC
-MIN,500,Oct08,BetOnline,NFC North,conference,,NFC
-PHI,800,Oct08,BetOnline,NFC East,conference,,NFC
-GB,1000,Oct08,BetOnline,NFC North,conference,,NFC
-DAL,1200,Oct08,BetOnline,NFC East,conference,,NFC
-ATL,1400,Oct08,BetOnline,NFC South,conference,,NFC
-WAS,1400,Oct08,BetOnline,NFC East,conference,,NFC
-SEA,2200,Oct08,BetOnline,NFC West,conference,,NFC
-NO,2200,Oct08,BetOnline,NFC South,conference,,NFC
-TB,2500,Oct08,BetOnline,NFC South,conference,,NFC
-CHI,3300,Oct08,BetOnline,NFC North,conference,,NFC
-ARI,4000,Oct08,BetOnline,NFC West,conference,,NFC
-LA,8000,Oct08,BetOnline,NFC West,conference,,NFC
-NYG,8000,Oct08,BetOnline,NFC East,conference,,NFC
-CAR,40000,Oct08,BetOnline,NFC South,conference,,NFC
-KC,240,Oct08,BetOnline,AFC West,conference,,AFC
-BAL,325,Oct08,BetOnline,AFC North,conference,,AFC
-BUF,525,Oct08,BetOnline,AFC East,conference,,AFC
-HOU,550,Oct08,BetOnline,AFC South,conference,,AFC
-NYJ,1400,Oct08,BetOnline,AFC East,conference,,AFC
-CIN,1800,Oct08,BetOnline,AFC North,conference,,AFC
-PIT,2500,Oct08,BetOnline,AFC North,conference,,AFC
-LAC,3300,Oct08,BetOnline,AFC West,conference,,AFC
-MIA,3500,Oct08,BetOnline,AFC East,conference,,AFC
-IND,3500,Oct08,BetOnline,AFC South,conference,,AFC
-JAX,5000,Oct08,BetOnline,AFC South,conference,,AFC
-DEN,5000,Oct08,BetOnline,AFC West,conference,,AFC
-CLE,10000,Oct08,BetOnline,AFC North,conference,,AFC
-LV,10000,Oct08,BetOnline,AFC West,conference,,AFC
-TEN,10000,Oct08,BetOnline,AFC South,conference,,AFC
-NE,30000,Oct08,BetOnline,AFC East,conference,,AFC
-KC,475,Oct08,BetOnline,AFC West,super bowl,,AFC
-BAL,750,Oct08,BetOnline,AFC North,super bowl,,AFC
-SF,800,Oct08,BetOnline,NFC West,super bowl,,NFC
-BUF,1100,Oct08,BetOnline,AFC East,super bowl,,AFC
-DET,1100,Oct08,BetOnline,NFC North,super bowl,,NFC
-HOU,1100,Oct08,BetOnline,AFC South,super bowl,,AFC
-MIN,1100,Oct08,BetOnline,NFC North,super bowl,,NFC
-PHI,1600,Oct08,BetOnline,NFC East,super bowl,,NFC
-GB,2000,Oct08,BetOnline,NFC North,super bowl,,NFC
-DAL,2500,Oct08,BetOnline,NFC East,super bowl,,NFC
-ATL,2800,Oct08,BetOnline,NFC South,super bowl,,NFC
-NYJ,2800,Oct08,BetOnline,AFC East,super bowl,,AFC
-CIN,3300,Oct08,BetOnline,AFC North,super bowl,,AFC
-WAS,3300,Oct08,BetOnline,NFC East,super bowl,,NFC
-NO,5000,Oct08,BetOnline,NFC South,super bowl,,NFC
-PIT,5000,Oct08,BetOnline,AFC North,super bowl,,AFC
-SEA,5000,Oct08,BetOnline,NFC West,super bowl,,NFC
-TB,5000,Oct08,BetOnline,NFC South,super bowl,,NFC
-CHI,5500,Oct08,BetOnline,NFC North,super bowl,,NFC
-LAC,6600,Oct08,BetOnline,AFC West,super bowl,,AFC
-ARI,7500,Oct08,BetOnline,NFC West,super bowl,,NFC
-IND,8000,Oct08,BetOnline,AFC South,super bowl,,AFC
-DEN,10000,Oct08,BetOnline,AFC West,super bowl,,AFC
-JAX,10000,Oct08,BetOnline,AFC South,super bowl,,AFC
-MIA,10000,Oct08,BetOnline,AFC East,super bowl,,AFC
-LA,15000,Oct08,BetOnline,NFC West,super bowl,,NFC
-NYG,15000,Oct08,BetOnline,NFC East,super bowl,,NFC
-CLE,20000,Oct08,BetOnline,AFC North,super bowl,,AFC
-TEN,20000,Oct08,BetOnline,AFC South,super bowl,,AFC
-LV,25000,Oct08,BetOnline,AFC West,super bowl,,AFC
-NE,75000,Oct08,BetOnline,AFC East,super bowl,,AFC
-CAR,100000,Oct08,BetOnline,NFC South,super bowl,,NFC
-SF vs KC,1600,Oct08,BetOnline,,exact matchup,,
-DET vs KC,1800,Oct08,BetOnline,,exact matchup,,
-MIN vs KC,1900,Oct08,BetOnline,,exact matchup,,
-SF vs BAL,2100,Oct08,BetOnline,,exact matchup,,
-DET vs BAL,2300,Oct08,BetOnline,,exact matchup,,
-MIN vs BAL,2400,Oct08,BetOnline,,exact matchup,,
-PHI vs KC,2900,Oct08,BetOnline,,exact matchup,,
-SF vs BUF,3100,Oct08,BetOnline,,exact matchup,,
-SF vs HOU,3300,Oct08,BetOnline,,exact matchup,,
-DET vs BUF,3400,Oct08,BetOnline,,exact matchup,,
-DET vs HOU,3600,Oct08,BetOnline,,exact matchup,,
-GB vs KC,3600,Oct08,BetOnline,,exact matchup,,
-MIN vs BUF,3600,Oct08,BetOnline,,exact matchup,,
-PHI vs BAL,3700,Oct08,BetOnline,,exact matchup,,
-MIN vs HOU,3800,Oct08,BetOnline,,exact matchup,,
-DAL vs KC,4300,Oct08,BetOnline,,exact matchup,,
-GB vs BAL,4500,Oct08,BetOnline,,exact matchup,,
-ATL vs KC,5000,Oct08,BetOnline,,exact matchup,,
-WAS vs KC,5000,Oct08,BetOnline,,exact matchup,,
-DAL vs BAL,5400,Oct08,BetOnline,,exact matchup,,
-PHI vs BUF,5500,Oct08,BetOnline,,exact matchup,,
-PHI vs HOU,5700,Oct08,BetOnline,,exact matchup,,
-ATL vs BAL,6200,Oct08,BetOnline,,exact matchup,,
-WAS vs BAL,6200,Oct08,BetOnline,,exact matchup,,
-GB vs BUF,6700,Oct08,BetOnline,,exact matchup,,
-GB vs HOU,7000,Oct08,BetOnline,,exact matchup,,
-NO vs KC,7700,Oct08,BetOnline,,exact matchup,,
-SF vs NYJ,7700,Oct08,BetOnline,,exact matchup,,
-SEA vs KC,7700,Oct08,BetOnline,,exact matchup,,
-DAL vs BUF,8000,Oct08,BetOnline,,exact matchup,,
-DAL vs HOU,8300,Oct08,BetOnline,,exact matchup,,
-DET vs NYJ,8500,Oct08,BetOnline,,exact matchup,,
-TB vs KC,8700,Oct08,BetOnline,,exact matchup,,
-NO vs BAL,8800,Oct08,BetOnline,,exact matchup,,
-MIN vs NYJ,8900,Oct08,BetOnline,,exact matchup,,
-ATL vs BUF,9200,Oct08,BetOnline,,exact matchup,,
-WAS vs BUF,9200,Oct08,BetOnline,,exact matchup,,
-ATL vs HOU,9600,Oct08,BetOnline,,exact matchup,,
-SEA vs BAL,9600,Oct08,BetOnline,,exact matchup,,
-WAS vs HOU,9600,Oct08,BetOnline,,exact matchup,,
-CHI vs KC,9700,Oct08,BetOnline,,exact matchup,,
-SF vs CIN,9800,Oct08,BetOnline,,exact matchup,,
-DET vs CIN,10800,Oct08,BetOnline,,exact matchup,,
-TB vs BAL,10900,Oct08,BetOnline,,exact matchup,,
-MIN vs CIN,11300,Oct08,BetOnline,,exact matchup,,
-CHI vs BAL,12200,Oct08,BetOnline,,exact matchup,,
-SF vs PIT,12900,Oct08,BetOnline,,exact matchup,,
-NO vs BUF,13000,Oct08,BetOnline,,exact matchup,,
-PHI vs NYJ,13400,Oct08,BetOnline,,exact matchup,,
-NO vs HOU,13500,Oct08,BetOnline,,exact matchup,,
-ARI vs LAC,13800,Oct08,BetOnline,,exact matchup,,
-ARI vs KC,14200,Oct08,BetOnline,,exact matchup,,
-SEA vs BUF,14200,Oct08,BetOnline,,exact matchup,,
-DET vs PIT,14800,Oct08,BetOnline,,exact matchup,,
-SEA vs HOU,14800,Oct08,BetOnline,,exact matchup,,
-MIN vs PIT,15500,Oct08,BetOnline,,exact matchup,,
-TB vs BUF,16100,Oct08,BetOnline,,exact matchup,,
-GB vs NYJ,16400,Oct08,BetOnline,,exact matchup,,
-TB vs HOU,16800,Oct08,BetOnline,,exact matchup,,
-PHI vs CIN,17000,Oct08,BetOnline,,exact matchup,,
-ARI vs BAL,17300,Oct08,BetOnline,,exact matchup,,
-SF vs LAC,17700,Oct08,BetOnline,,exact matchup,,
-CHI vs BUF,18000,Oct08,BetOnline,,exact matchup,,
-CHI vs HOU,18700,Oct08,BetOnline,,exact matchup,,
-SF vs IND,18800,Oct08,BetOnline,,exact matchup,,
-SF vs MIA,18800,Oct08,BetOnline,,exact matchup,,
-DAL vs NYJ,19400,Oct08,BetOnline,,exact matchup,,
-DET vs LAC,19400,Oct08,BetOnline,,exact matchup,,
-MIN vs LAC,20300,Oct08,BetOnline,,exact matchup,,
-DET vs IND,20600,Oct08,BetOnline,,exact matchup,,
-DET vs MIA,20600,Oct08,BetOnline,,exact matchup,,
-GB vs CIN,20800,Oct08,BetOnline,,exact matchup,,
-MIN vs IND,21500,Oct08,BetOnline,,exact matchup,,
-MIN vs MIA,21500,Oct08,BetOnline,,exact matchup,,
-ATL vs NYJ,22400,Oct08,BetOnline,,exact matchup,,
-WAS vs NYJ,22400,Oct08,BetOnline,,exact matchup,,
-PHI vs PIT,23300,Oct08,BetOnline,,exact matchup,,
-DAL vs CIN,24600,Oct08,BetOnline,,exact matchup,,
-ARI vs BUF,25500,Oct08,BetOnline,,exact matchup,,
-LA vs KC,25700,Oct08,BetOnline,,exact matchup,,
-NYG vs KC,25700,Oct08,BetOnline,,exact matchup,,
-ARI vs HOU,26500,Oct08,BetOnline,,exact matchup,,
-SF vs DEN,26600,Oct08,BetOnline,,exact matchup,,
-SF vs JAX,26600,Oct08,BetOnline,,exact matchup,,
-ATL vs CIN,28400,Oct08,BetOnline,,exact matchup,,
-WAS vs CIN,28400,Oct08,BetOnline,,exact matchup,,
-GB vs PIT,28500,Oct08,BetOnline,,exact matchup,,
-DET vs DEN,29200,Oct08,BetOnline,,exact matchup,,
-DET vs JAX,29200,Oct08,BetOnline,,exact matchup,,
-MIN vs DEN,30500,Oct08,BetOnline,,exact matchup,,
-MIN vs JAX,30500,Oct08,BetOnline,,exact matchup,,
-PHI vs LAC,30500,Oct08,BetOnline,,exact matchup,,
-NO vs NYJ,31400,Oct08,BetOnline,,exact matchup,,
-LA vs BAL,32200,Oct08,BetOnline,,exact matchup,,
-NYG vs BAL,32200,Oct08,BetOnline,,exact matchup,,
-PHI vs IND,32300,Oct08,BetOnline,,exact matchup,,
-PHI vs MIA,32300,Oct08,BetOnline,,exact matchup,,
-DAL vs PIT,33700,Oct08,BetOnline,,exact matchup,,
-SEA vs NYJ,34400,Oct08,BetOnline,,exact matchup,,
-GB vs LAC,37300,Oct08,BetOnline,,exact matchup,,
-ATL vs PIT,38900,Oct08,BetOnline,,exact matchup,,
-TB vs NYJ,38900,Oct08,BetOnline,,exact matchup,,
-WAS vs PIT,38900,Oct08,BetOnline,,exact matchup,,
-GB vs IND,39500,Oct08,BetOnline,,exact matchup,,
-GB vs MIA,39500,Oct08,BetOnline,,exact matchup,,
-NO vs CIN,39800,Oct08,BetOnline,,exact matchup,,
-CHI vs NYJ,43400,Oct08,BetOnline,,exact matchup,,
-SEA vs CIN,43600,Oct08,BetOnline,,exact matchup,,
-DAL vs LAC,44100,Oct08,BetOnline,,exact matchup,,
-PHI vs DEN,45800,Oct08,BetOnline,,exact matchup,,
-PHI vs JAX,45800,Oct08,BetOnline,,exact matchup,,
-DAL vs IND,46700,Oct08,BetOnline,,exact matchup,,
-DAL vs MIA,46700,Oct08,BetOnline,,exact matchup,,
-LA vs BUF,47400,Oct08,BetOnline,,exact matchup,,
-NYG vs BUF,47400,Oct08,BetOnline,,exact matchup,,
-LA vs HOU,49300,Oct08,BetOnline,,exact matchup,,
-NYG vs HOU,49300,Oct08,BetOnline,,exact matchup,,
-TB vs CIN,49300,Oct08,BetOnline,,exact matchup,,
-SF vs CLE,50400,Oct08,BetOnline,,exact matchup,,
-ATL vs LAC,50900,Oct08,BetOnline,,exact matchup,,
-WAS vs LAC,50900,Oct08,BetOnline,,exact matchup,,
-SF vs LV,52900,Oct08,BetOnline,,exact matchup,,
-SF vs TEN,52900,Oct08,BetOnline,,exact matchup,,
-ATL vs IND,53900,Oct08,BetOnline,,exact matchup,,
-ATL vs MIA,53900,Oct08,BetOnline,,exact matchup,,
-WAS vs IND,53900,Oct08,BetOnline,,exact matchup,,
-WAS vs MIA,53900,Oct08,BetOnline,,exact matchup,,
-CHI vs CIN,55000,Oct08,BetOnline,,exact matchup,,
-GB vs DEN,56000,Oct08,BetOnline,,exact matchup,,
-GB vs JAX,56000,Oct08,BetOnline,,exact matchup,,
-DET vs CLE,57900,Oct08,BetOnline,,exact matchup,,
-DET vs LV,57900,Oct08,BetOnline,,exact matchup,,
-DET vs TEN,57900,Oct08,BetOnline,,exact matchup,,
-NO vs PIT,59700,Oct08,BetOnline,,exact matchup,,
-SEA vs PIT,59700,Oct08,BetOnline,,exact matchup,,
-MIN vs CLE,60500,Oct08,BetOnline,,exact matchup,,
-MIN vs LV,60500,Oct08,BetOnline,,exact matchup,,
-MIN vs TEN,60500,Oct08,BetOnline,,exact matchup,,
-ARI vs NYJ,61400,Oct08,BetOnline,,exact matchup,,
-DAL vs DEN,66200,Oct08,BetOnline,,exact matchup,,
-DAL vs JAX,66200,Oct08,BetOnline,,exact matchup,,
-TB vs PIT,67500,Oct08,BetOnline,,exact matchup,,
-NO vs LAC,71300,Oct08,BetOnline,,exact matchup,,
-NO vs IND,75500,Oct08,BetOnline,,exact matchup,,
-NO vs MIA,75500,Oct08,BetOnline,,exact matchup,,
-ATL vs DEN,76400,Oct08,BetOnline,,exact matchup,,
-ATL vs JAX,76400,Oct08,BetOnline,,exact matchup,,
-WAS vs DEN,76400,Oct08,BetOnline,,exact matchup,,
-WAS vs JAX,76400,Oct08,BetOnline,,exact matchup,,
-ARI vs CIN,77800,Oct08,BetOnline,,exact matchup,,
-SEA vs LAC,78100,Oct08,BetOnline,,exact matchup,,
-SEA vs IND,82700,Oct08,BetOnline,,exact matchup,,
-SEA vs MIA,82700,Oct08,BetOnline,,exact matchup,,
-CHI vs PIT,88300,Oct08,BetOnline,,exact matchup,,
-TB vs LAC,88300,Oct08,BetOnline,,exact matchup,,
-PHI vs CLE,90800,Oct08,BetOnline,,exact matchup,,
-PHI vs LV,90800,Oct08,BetOnline,,exact matchup,,
-PHI vs TEN,90800,Oct08,BetOnline,,exact matchup,,
-TB vs IND,93500,Oct08,BetOnline,,exact matchup,,
-TB vs MIA,93500,Oct08,BetOnline,,exact matchup,,
-CHI vs LAC,98500,Oct08,BetOnline,,exact matchup,,
-CHI vs IND,104300,Oct08,BetOnline,,exact matchup,,
-CHI vs MIA,104300,Oct08,BetOnline,,exact matchup,,
-ARI vs PIT,106500,Oct08,BetOnline,,exact matchup,,
-NO vs DEN,107000,Oct08,BetOnline,,exact matchup,,
-NO vs JAX,107000,Oct08,BetOnline,,exact matchup,,
-GB vs CLE,111000,Oct08,BetOnline,,exact matchup,,
-GB vs LV,111000,Oct08,BetOnline,,exact matchup,,
-GB vs TEN,111000,Oct08,BetOnline,,exact matchup,,
-LA vs NYJ,113900,Oct08,BetOnline,,exact matchup,,
-NYG vs NYJ,113900,Oct08,BetOnline,,exact matchup,,
-SEA vs DEN,117200,Oct08,BetOnline,,exact matchup,,
-SEA vs JAX,117200,Oct08,BetOnline,,exact matchup,,
-DAL vs CLE,131200,Oct08,BetOnline,,exact matchup,,
-DAL vs LV,131200,Oct08,BetOnline,,exact matchup,,
-DAL vs TEN,131200,Oct08,BetOnline,,exact matchup,,
-TB vs DEN,132500,Oct08,BetOnline,,exact matchup,,
-TB vs JAX,132500,Oct08,BetOnline,,exact matchup,,
-CAR vs KC,136200,Oct08,BetOnline,,exact matchup,,
-LA vs CIN,144300,Oct08,BetOnline,,exact matchup,,
-NYG vs CIN,144300,Oct08,BetOnline,,exact matchup,,
-ARI vs IND,147500,Oct08,BetOnline,,exact matchup,,
-ARI vs MIA,147500,Oct08,BetOnline,,exact matchup,,
-CHI vs DEN,147800,Oct08,BetOnline,,exact matchup,,
-CHI vs JAX,147800,Oct08,BetOnline,,exact matchup,,
-ATL vs CLE,151400,Oct08,BetOnline,,exact matchup,,
-ATL vs LV,151400,Oct08,BetOnline,,exact matchup,,
-ATL vs TEN,151400,Oct08,BetOnline,,exact matchup,,
-WAS vs CLE,151400,Oct08,BetOnline,,exact matchup,,
-WAS vs LV,151400,Oct08,BetOnline,,exact matchup,,
-WAS vs TEN,151400,Oct08,BetOnline,,exact matchup,,
-SF vs NE,157900,Oct08,BetOnline,,exact matchup,,
-CAR vs BAL,170300,Oct08,BetOnline,,exact matchup,,
-DET vs NE,172900,Oct08,BetOnline,,exact matchup,,
-MIN vs NE,180500,Oct08,BetOnline,,exact matchup,,
-NYG vs PIT,197500,Oct08,BetOnline,,exact matchup,,
-ARI vs DEN,209000,Oct08,BetOnline,,exact matchup,,
-ARI vs JAX,209000,Oct08,BetOnline,,exact matchup,,
-LA vs PIT,210500,Oct08,BetOnline,,exact matchup,,
-NO vs LV,212000,Oct08,BetOnline,,exact matchup,,
-NO vs TEN,212000,Oct08,BetOnline,,exact matchup,,
-NO vs CLE,232200,Oct08,BetOnline,,exact matchup,,
-SEA vs CLE,232200,Oct08,BetOnline,,exact matchup,,
-SEA vs LV,232200,Oct08,BetOnline,,exact matchup,,
-SEA vs TEN,232200,Oct08,BetOnline,,exact matchup,,
-CAR vs BUF,250500,Oct08,BetOnline,,exact matchup,,
-LA vs LAC,258300,Oct08,BetOnline,,exact matchup,,
-NYG vs LAC,258300,Oct08,BetOnline,,exact matchup,,
-CAR vs HOU,260500,Oct08,BetOnline,,exact matchup,,
-TB vs CLE,262500,Oct08,BetOnline,,exact matchup,,
-TB vs LV,262500,Oct08,BetOnline,,exact matchup,,
-TB vs TEN,262500,Oct08,BetOnline,,exact matchup,,
-PHI vs NE,270800,Oct08,BetOnline,,exact matchup,,
-LA vs MIA,273500,Oct08,BetOnline,,exact matchup,,
-CHI vs LV,292800,Oct08,BetOnline,,exact matchup,,
-CHI vs TEN,292800,Oct08,BetOnline,,exact matchup,,
-GB vs NE,331000,Oct08,BetOnline,,exact matchup,,
-CHI vs CLE,343300,Oct08,BetOnline,,exact matchup,,
-LA vs IND,373500,Oct08,BetOnline,,exact matchup,,
-NYG vs IND,373500,Oct08,BetOnline,,exact matchup,,
-NYG vs MIA,373500,Oct08,BetOnline,,exact matchup,,
-LA vs DEN,387500,Oct08,BetOnline,,exact matchup,,
-LA vs JAX,387500,Oct08,BetOnline,,exact matchup,,
-NYG vs DEN,387500,Oct08,BetOnline,,exact matchup,,
-NYG vs JAX,387500,Oct08,BetOnline,,exact matchup,,
-DAL vs NE,391200,Oct08,BetOnline,,exact matchup,,
-ARI vs CLE,414000,Oct08,BetOnline,,exact matchup,,
-ARI vs LV,414000,Oct08,BetOnline,,exact matchup,,
-ARI vs TEN,414000,Oct08,BetOnline,,exact matchup,,
-ATL vs NE,451400,Oct08,BetOnline,,exact matchup,,
-WAS vs NE,451400,Oct08,BetOnline,,exact matchup,,
-ARI vs NE,500000,Oct08,BetOnline,,exact matchup,,
-CAR vs CIN,500000,Oct08,BetOnline,,exact matchup,,
-CAR vs CLE,500000,Oct08,BetOnline,,exact matchup,,
-CAR vs DEN,500000,Oct08,BetOnline,,exact matchup,,
-CAR vs IND,500000,Oct08,BetOnline,,exact matchup,,
-CAR vs JAX,500000,Oct08,BetOnline,,exact matchup,,
-CAR vs LV,500000,Oct08,BetOnline,,exact matchup,,
-CAR vs LAC,500000,Oct08,BetOnline,,exact matchup,,
-CAR vs MIA,500000,Oct08,BetOnline,,exact matchup,,
-CAR vs NE,500000,Oct08,BetOnline,,exact matchup,,
-CAR vs NYJ,500000,Oct08,BetOnline,,exact matchup,,
-CAR vs PIT,500000,Oct08,BetOnline,,exact matchup,,
-CAR vs TEN,500000,Oct08,BetOnline,,exact matchup,,
-CHI vs NE,500000,Oct08,BetOnline,,exact matchup,,
-LA vs CLE,500000,Oct08,BetOnline,,exact matchup,,
-LA vs LV,500000,Oct08,BetOnline,,exact matchup,,
-LA vs NE,500000,Oct08,BetOnline,,exact matchup,,
-LA vs TEN,500000,Oct08,BetOnline,,exact matchup,,
-NO vs NE,500000,Oct08,BetOnline,,exact matchup,,
-NYG vs CLE,500000,Oct08,BetOnline,,exact matchup,,
-NYG vs LV,500000,Oct08,BetOnline,,exact matchup,,
-NYG vs NE,500000,Oct08,BetOnline,,exact matchup,,
-NYG vs TEN,500000,Oct08,BetOnline,,exact matchup,,
-SEA vs NE,500000,Oct08,BetOnline,,exact matchup,,
-TB vs NE,500000,Oct08,BetOnline,,exact matchup,,
-BAL,-300,Oct08,Bovada,AFC North,division,,AFC
-PIT,325,Oct08,Bovada,AFC North,division,,AFC
-CIN,850,Oct08,Bovada,AFC North,division,,AFC
-CLE,10000,Oct08,Bovada,AFC North,division,,AFC
-PHI,125,Oct08,Bovada,NFC East,division,,NFC
-WAS,185,Oct08,Bovada,NFC East,division,,NFC
-DAL,250,Oct08,Bovada,NFC East,division,,NFC
-NYG,4000,Oct08,Bovada,NFC East,division,,NFC
-MIN,-110,Oct08,Bovada,NFC North,division,,NFC
-DET,155,Oct08,Bovada,NFC North,division,,NFC
-GB,700,Oct08,Bovada,NFC North,division,,NFC
-CHI,1500,Oct08,Bovada,NFC North,division,,NFC
-BUF,-225,Oct08,Bovada,AFC East,division,,AFC
-NYJ,325,Oct08,Bovada,AFC East,division,,AFC
-MIA,575,Oct08,Bovada,AFC East,division,,AFC
-NE,4000,Oct08,Bovada,AFC East,division,,AFC
-HOU,-550,Oct08,Bovada,AFC South,division,,AFC
-IND,800,Oct08,Bovada,AFC South,division,,AFC
-JAX,1200,Oct08,Bovada,AFC South,division,,AFC
-TEN,1400,Oct08,Bovada,AFC South,division,,AFC
-SF,-125,Oct08,Bovada,NFC West,division,,NFC
-SEA,225,Oct08,Bovada,NFC West,division,,NFC
-ARI,450,Oct08,Bovada,NFC West,division,,NFC
-LA,1500,Oct08,Bovada,NFC West,division,,NFC
-KC,225,Oct08,Bovada,AFC West,conference,,AFC
-BAL,325,Oct08,Bovada,AFC North,conference,,AFC
-BUF,500,Oct08,Bovada,AFC East,conference,,AFC
-HOU,500,Oct08,Bovada,AFC South,conference,,AFC
-NYJ,1400,Oct08,Bovada,AFC East,conference,,AFC
-CIN,1600,Oct08,Bovada,AFC North,conference,,AFC
-PIT,2200,Oct08,Bovada,AFC North,conference,,AFC
-IND,3300,Oct08,Bovada,AFC South,conference,,AFC
-LAC,3300,Oct08,Bovada,AFC West,conference,,AFC
-MIA,3300,Oct08,Bovada,AFC East,conference,,AFC
-DEN,5000,Oct08,Bovada,AFC West,conference,,AFC
-JAX,5000,Oct08,Bovada,AFC South,conference,,AFC
-CLE,8000,Oct08,Bovada,AFC North,conference,,AFC
-LV,10000,Oct08,Bovada,AFC West,conference,,AFC
-TEN,10000,Oct08,Bovada,AFC South,conference,,AFC
-NE,30000,Oct08,Bovada,AFC East,conference,,AFC
-SF,400,Oct08,Bovada,NFC West,conference,,NFC
-DET,550,Oct08,Bovada,NFC North,conference,,NFC
-MIN,575,Oct08,Bovada,NFC North,conference,,NFC
-PHI,800,Oct08,Bovada,NFC East,conference,,NFC
-GB,900,Oct08,Bovada,NFC North,conference,,NFC
-DAL,1000,Oct08,Bovada,NFC East,conference,,NFC
-ATL,1200,Oct08,Bovada,NFC South,conference,,NFC
-WAS,1600,Oct08,Bovada,NFC East,conference,,NFC
-NO,2000,Oct08,Bovada,NFC South,conference,,NFC
-SEA,2200,Oct08,Bovada,NFC West,conference,,NFC
-TB,2200,Oct08,Bovada,NFC South,conference,,NFC
-CHI,2500,Oct08,Bovada,NFC North,conference,,NFC
-ARI,3300,Oct08,Bovada,NFC West,conference,,NFC
-LA,4000,Oct08,Bovada,NFC West,conference,,NFC
-NYG,8000,Oct08,Bovada,NFC East,conference,,NFC
-CAR,25000,Oct08,Bovada,NFC South,conference,,NFC
-KC,500,Oct08,Bovada,AFC West,super bowl,,AFC
-BAL,700,Oct08,Bovada,AFC North,super bowl,,AFC
-SF,750,Oct08,Bovada,NFC West,super bowl,,NFC
-BUF,1100,Oct08,Bovada,AFC East,super bowl,,AFC
-DET,1100,Oct08,Bovada,NFC North,super bowl,,NFC
-HOU,1100,Oct08,Bovada,AFC South,super bowl,,AFC
-MIN,1100,Oct08,Bovada,NFC North,super bowl,,NFC
-PHI,1400,Oct08,Bovada,NFC East,super bowl,,NFC
-GB,1500,Oct08,Bovada,NFC North,super bowl,,NFC
-DAL,2000,Oct08,Bovada,NFC East,super bowl,,NFC
-ATL,2800,Oct08,Bovada,NFC South,super bowl,,NFC
-NYJ,2800,Oct08,Bovada,AFC East,super bowl,,AFC
-WAS,2800,Oct08,Bovada,NFC East,super bowl,,NFC
-CIN,3500,Oct08,Bovada,AFC North,super bowl,,AFC
-NO,4000,Oct08,Bovada,NFC South,super bowl,,NFC
-SEA,4000,Oct08,Bovada,NFC West,super bowl,,NFC
-CHI,5000,Oct08,Bovada,NFC North,super bowl,,NFC
-PIT,5000,Oct08,Bovada,AFC North,super bowl,,AFC
-TB,5000,Oct08,Bovada,NFC South,super bowl,,NFC
-LAC,6000,Oct08,Bovada,AFC West,super bowl,,AFC
-ARI,7000,Oct08,Bovada,NFC West,super bowl,,NFC
-IND,7000,Oct08,Bovada,AFC South,super bowl,,AFC
-MIA,8000,Oct08,Bovada,AFC East,super bowl,,AFC
-DEN,10000,Oct08,Bovada,AFC West,super bowl,,AFC
-JAX,10000,Oct08,Bovada,AFC South,super bowl,,AFC
-LA,10000,Oct08,Bovada,NFC West,super bowl,,NFC
-CLE,15000,Oct08,Bovada,AFC North,super bowl,,AFC
-NYG,15000,Oct08,Bovada,NFC East,super bowl,,NFC
-TEN,15000,Oct08,Bovada,AFC South,super bowl,,AFC
-LV,20000,Oct08,Bovada,AFC West,super bowl,,AFC
-CAR,50000,Oct08,Bovada,NFC South,super bowl,,NFC
-NE,50000,Oct08,Bovada,AFC East,super bowl,,AFC
+DET,-300,Dec23,betonline,NFC North,division,,
+MIN,225,Dec23,betonline,NFC North,division,,
+LA,-800,Dec23,betonline,NFC West,division,,
+SEA,500,Dec23,betonline,NFC West,division,,
+TB,-140,Dec23,betonline,NFC South,division,,
+ATL,110,Dec23,betonline,NFC South,division,,
+BAL,-165,Dec23,betonline,AFC North,division,,
+PIT,135,Dec23,betonline,AFC North,division,,
+CIN,-2000,Dec23,betonline,,make playoffs,No,
+CIN,1000,Dec23,betonline,,make playoffs,Yes,
+DEN,-300,Dec23,betonline,,make playoffs,Yes,
+DEN,240,Dec23,betonline,,make playoffs,No,
+IND,-500,Dec23,betonline,,make playoffs,No,
+IND,375,Dec23,betonline,,make playoffs,Yes,
+MIA,-1600,Dec23,betonline,,make playoffs,No,
+MIA,800,Dec23,betonline,,make playoffs,Yes,
+DET,185,Dec23,betonline,NFC North,conference,,NFC
+PHI,250,Dec23,betonline,NFC East,conference,,NFC
+MIN,500,Dec23,betonline,NFC North,conference,,NFC
+GB,600,Dec23,betonline,NFC North,conference,,NFC
+LA,1400,Dec23,betonline,NFC West,conference,,NFC
+WAS,1800,Dec23,betonline,NFC East,conference,,NFC
+TB,2000,Dec23,betonline,NFC South,conference,,NFC
+ATL,5000,Dec23,betonline,NFC South,conference,,NFC
+SEA,6000,Dec23,betonline,NFC West,conference,,NFC
+KC,175,Dec23,betonline,AFC West,conference,,AFC
+BUF,200,Dec23,betonline,AFC East,conference,,AFC
+BAL,300,Dec23,betonline,AFC North,conference,,AFC
+PIT,1800,Dec23,betonline,AFC North,conference,,AFC
+HOU,2000,Dec23,betonline,AFC South,conference,,AFC
+LAC,2000,Dec23,betonline,AFC West,conference,,AFC
+DEN,3500,Dec23,betonline,AFC West,conference,,AFC
+CIN,5000,Dec23,betonline,AFC North,conference,,AFC
+MIA,10000,Dec23,betonline,AFC East,conference,,AFC
+IND,20000,Dec23,betonline,AFC South,conference,,AFC
+KC,400,Dec23,betonline,AFC West,super bowl,,AFC
+BUF,425,Dec23,betonline,AFC East,super bowl,,AFC
+DET,450,Dec23,betonline,NFC North,super bowl,,NFC
+BAL,600,Dec23,betonline,AFC North,super bowl,,AFC
+PHI,650,Dec23,betonline,NFC East,super bowl,,NFC
+MIN,1000,Dec23,betonline,NFC North,super bowl,,NFC
+GB,1400,Dec23,betonline,NFC North,super bowl,,NFC
+LA,2500,Dec23,betonline,NFC West,super bowl,,NFC
+PIT,3500,Dec23,betonline,AFC North,super bowl,,AFC
+HOU,4000,Dec23,betonline,AFC South,super bowl,,AFC
+WAS,4000,Dec23,betonline,NFC East,super bowl,,NFC
+LAC,4500,Dec23,betonline,AFC West,super bowl,,AFC
+TB,5000,Dec23,betonline,NFC South,super bowl,,NFC
+DEN,7500,Dec23,betonline,AFC West,super bowl,,AFC
+CIN,10000,Dec23,betonline,AFC North,super bowl,,AFC
+SEA,12500,Dec23,betonline,NFC West,super bowl,,NFC
+ATL,15000,Dec23,betonline,NFC South,super bowl,,NFC
+MIA,25000,Dec23,betonline,AFC East,super bowl,,AFC
+IND,40000,Dec23,betonline,AFC South,super bowl,,AFC
+BAL,-160,Dec23,Bovada,AFC North,division,,AFC
+PIT,135,Dec23,Bovada,AFC North,division,,AFC
+DET,-290,Dec23,Bovada,NFC North,division,,NFC
+MIN,240,Dec23,Bovada,NFC North,division,,NFC
+TB,-140,Dec23,Bovada,NFC South,division,,NFC
+ATL,115,Dec23,Bovada,NFC South,division,,NFC
+LA,-750,Dec23,Bovada,NFC West,division,,NFC
+SEA,500,Dec23,Bovada,NFC West,division,,NFC
+BUF,200,Dec23,Bovada,AFC East,conference,,AFC
+KC,210,Dec23,Bovada,AFC West,conference,,AFC
+BAL,350,Dec23,Bovada,AFC North,conference,,AFC
+HOU,1300,Dec23,Bovada,AFC South,conference,,AFC
+PIT,1500,Dec23,Bovada,AFC North,conference,,AFC
+LAC,1600,Dec23,Bovada,AFC West,conference,,AFC
+DEN,2800,Dec23,Bovada,AFC West,conference,,AFC
+CIN,10000,Dec23,Bovada,AFC North,conference,,AFC
+MIA,10000,Dec23,Bovada,AFC East,conference,,AFC
+IND,17500,Dec23,Bovada,AFC South,conference,,AFC
+DET,200,Dec23,Bovada,NFC North,conference,,NFC
+PHI,300,Dec23,Bovada,NFC East,conference,,NFC
+MIN,550,Dec23,Bovada,NFC North,conference,,NFC
+GB,650,Dec23,Bovada,NFC North,conference,,NFC
+LA,950,Dec23,Bovada,NFC West,conference,,NFC
+WAS,1400,Dec23,Bovada,NFC East,conference,,NFC
+TB,1800,Dec23,Bovada,NFC South,conference,,NFC
+ATL,3000,Dec23,Bovada,NFC South,conference,,NFC
+SEA,7000,Dec23,Bovada,NFC West,conference,,NFC
+BUF,450,Dec23,Bovada,AFC East,super bowl,,AFC
+KC,450,Dec23,Bovada,AFC West,super bowl,,AFC
+DET,475,Dec23,Bovada,NFC North,super bowl,,NFC
+BAL,650,Dec23,Bovada,AFC North,super bowl,,AFC
+PHI,650,Dec23,Bovada,NFC East,super bowl,,NFC
+MIN,1100,Dec23,Bovada,NFC North,super bowl,,NFC
+GB,1300,Dec23,Bovada,NFC North,super bowl,,NFC
+LA,2500,Dec23,Bovada,NFC West,super bowl,,NFC
+PIT,3500,Dec23,Bovada,AFC North,super bowl,,AFC
+HOU,4000,Dec23,Bovada,AFC South,super bowl,,AFC
+WAS,4000,Dec23,Bovada,NFC East,super bowl,,NFC
+LAC,4400,Dec23,Bovada,AFC West,super bowl,,AFC
+TB,5500,Dec23,Bovada,NFC South,super bowl,,NFC
+ATL,7000,Dec23,Bovada,NFC South,super bowl,,NFC
+DEN,8500,Dec23,Bovada,AFC West,super bowl,,AFC
+CIN,10000,Dec23,Bovada,AFC North,super bowl,,AFC
+SEA,12500,Dec23,Bovada,NFC West,super bowl,,NFC
+MIA,25000,Dec23,Bovada,AFC East,super bowl,,AFC
+IND,45000,Dec23,Bovada,AFC South,super bowl,,AFC
