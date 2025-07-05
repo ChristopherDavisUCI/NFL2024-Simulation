@@ -164,6 +164,7 @@ df_pr = pd.DataFrame({"Overall": {t:pr_complete[t+"_Off"] + pr_complete[t+"_Def"
         "Offensive":{t:pr_complete[t+"_Off"] for t in teams}, "Defensive":{t:pr_complete[t+"_Def"] for t in teams}}
         )
 
+st.markdown("Please see the 2025 version of this app!  https://nfl2025-simulation.streamlit.app/")
 
 st.markdown('''Based on your power ratings, we use Python to run many simulations of the 2023 NFL season, and then estimate answers to questions like:
 * How likely is Dallas to get the no. 1 seed?  To win its division? To make the playoffs?
